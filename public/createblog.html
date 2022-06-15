@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logofav.png" />
+
+    <title>Blogsio | Talk with your words</title>
+  </head>
+
+  <body>
+    <style>
+      textarea {
+        padding: 10px;
+        margin: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        width: 100%;
+        resize: vertical;
+        background-color: #f2f2f2;
+        border-radius: 2%;
+        border: 0px;
+      }
+
+      textarea:focus {
+        outline: 2px solid #55c57a;
+        outline-offset: 2px;
+      }
+    </style>
+    <header class="header">
+      <nav class="nav nav--tours">
+        <a href="/" class="nav__el">All Blogs</a>
+        <!-- <form class="nav__search">
+          <button class="nav__search-btn">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input
+            type="text"
+            placeholder="Search tours"
+            class="nav__search-input"
+          />
+        </form> -->
+      </nav>
+      <div class="header__logo">
+        <img src="img/logo.png" alt="Blogsio logo" />
+      </div>
+      <nav class="nav nav--user">
+        <span id="logged-in">
+          <a href="/useraccount.html" class="nav__el">
+            <img
+              src="img/defaultuser.png"
+              alt="User photo"
+              class="nav__user-img"
+            />
+            <span>Apoorv</span>
+          </a>
+        </span>
+        <span id="log-in">
+          <a href="login.html"><button class="nav__el">Log in</button></a>
+          <a href="signup.html" style="text-decoration: none; margin-left: 15px"
+            ><button class="nav__el nav__el--cta">Sign up</button></a
+          >
+        </span>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="login-form">
+        <h2 class="heading-secondary ma-bt-lg">Create your own blog</h2>
+        <div
+          style="
+            color: red;
+            font-size: 13px;
+            font-family: inherit;
+            font-weight: bold;
+            margin-top: -10px;
+            margin-bottom: 20px;
+          "
+        >
+          * indicates a required field
+        </div>
+        <form class="form">
+          <div class="form__group">
+            <label class="form__label" for="title"
+              >Title <span style="color: red">*</span></label
+            >
+            <input
+              class="form__input"
+              id="title"
+              type="text"
+              placeholder="Blog's Title"
+              required="required"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="domain"
+              >Domain <span style="color: red">*</span></label
+            >
+            <input
+              class="form__input"
+              id="domain"
+              type="text"
+              placeholder="Blog's Domain"
+              required="required"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="summary"
+              >Summary <span style="color: red">*</span></label
+            >
+            <input
+              class="form__input"
+              id="summary"
+              type="text"
+              placeholder="Blog's Summary"
+              required="required"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="content"
+              >Content
+              <span style="color: red"
+                >*
+                <span
+                  style="
+                    color: red;
+                    font-size: 12px;
+                    font-family: inherit;
+                    margin-left: 5px;
+                  "
+                  >separate paragraphs by manually typing \n</span
+                ></span
+              ></label
+            >
+            <!-- <div style="color:red; font-size: 12px; font-family: inherit; float: left;">separate paragraphs by manually typing \n</div> -->
+            <textarea
+              rows="10"
+              placeholder="Blog's Content"
+              required="required"
+              id="content"
+            ></textarea>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="coverimg"
+              >Cover Image <span style="color: red">*</span></label
+            >
+            <!-- <input class="form__input" id="coverimg" type="text" placeholder="Cover Image URL" required="required" /> -->
+            <input
+              id="coverimg"
+              type="file"
+              accept="Image/*"
+              placeholder="Cover Image URL"
+              required="required"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="displayimg"
+              >Display Image 1 <span style="color: red">*</span></label
+            >
+            <input
+              id="displayimg1"
+              type="file"
+              accept="Image/*"
+              placeholder="Display Image 1 URL"
+              required="required"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="displayimg"
+              >Display Image 2 <span style="color: red">*</span></label
+            >
+            <input
+              id="displayimg2"
+              type="file"
+              accept="Image/*"
+              placeholder="Display Image 2 URL"
+              required="required"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="displayimg"
+              >Display Image 3 <span style="color: red">*</span></label
+            >
+            <input
+              id="displayimg3"
+              type="file"
+              accept="Image/*"
+              placeholder="Display Image 3 URL"
+              required="required"
+            />
+          </div>
+          <div class="form__group">
+            <button
+              class="btn btn--green"
+              id="createblog"
+              style="margin-top: 10px"
+            >
+              Create Blog
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="footer">
+      <div class="footer__logo">
+        <img src="img/logo.png" alt="Blogsio logo" />
+      </div>
+      <ul class="footer__nav">
+        <li><a href="/about.html">About us</a></li>
+        <li><a href="#">Download app</a></li>
+        <!-- <li><a href="">Reach out</a></li> -->
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+      <p class="footer__copyright">
+        &copy; by Apoorv Agrawal. &nbsp; <a href="#">Source Code</a>
+      </p>
+    </div>
+    <script src="./js/loggedin.js"></script>
+    <script src="./js/createblog.js"></script>
+  </body>
+</html>

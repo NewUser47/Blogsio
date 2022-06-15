@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logofav.png" />
+
+    <title>Blogsio | Talk with your words</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav nav--tours">
+        <a href="/" class="nav__el">All Blogs</a>
+        <!-- <form class="nav__search">
+          <button class="nav__search-btn">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input
+            type="text"
+            placeholder="Search tours"
+            class="nav__search-input"
+          />
+        </form> -->
+      </nav>
+      <div class="header__logo">
+        <img src="img/logo.png" alt="Blogsio logo" />
+      </div>
+      <nav class="nav nav--user">
+        <span id="logged-in">
+          <a href="/useraccount.html" class="nav__el">
+            <img src="img/user.jpg" alt="User photo" class="nav__user-img" />
+            <span>Apoorv</span>
+          </a>
+        </span>
+        <span id="log-in">
+          <a href="login.html"><button class="nav__el" >Log in</button></a>
+          <a href="signup.html" style="text-decoration: none; margin-left: 15px;"><button class="nav__el nav__el--cta">Sign up</button></a>
+        </span>
+      </nav>
+    </header>
+<main class="main">
+    <div class="login-form">
+        <h2 class="heading-secondary ma-bt-lg">Sign Up for an account</h2>
+        <!-- <div style="color:red; font-size: 13px; font-family: inherit; font-weight: bold; margin-top: -10px; margin-bottom: 20px">* indicates a required field</div> -->
+        <form class="form">
+            <div class="form__group">
+                <label class="form__label" for="name">Name <span style="color: red;">*</span></label>
+                <input class="form__input" id="name" type="text" placeholder="Your name" required="required" />
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="email">Email address <span style="color: red;">*</span></label>
+                <input class="form__input" id="email" type="email" placeholder="you@example.com" required="required" />
+            </div>
+            <div class="form__group ma-bt-md">
+                <label class="form__label" for="password">Password <span style="color: red;">*</span></label>
+                <input class="form__input" id="password" type="password" placeholder="••••••••" required="required" minlength="8" />
+            </div>
+            <div class="form__group ma-bt-md">
+                <label class="form__label" for="cnfpassword">Confirm Password <span style="color: red;">*</span></label>
+                <input class="form__input" id="cnfpassword" type="password" placeholder="••••••••" required="required" minlength="8" />
+            </div>
+            <div class="form__group"><button class="btn btn--green" id="signup">Sign up</button></div>
+        </form>
+    </div>
+</main>
+<div class="footer">
+    <div class="footer__logo">
+      <img src="img/logo.png" alt="Blogsio logo" />
+    </div>
+    <ul class="footer__nav">
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Download app</a></li>
+      <li><a href="#">Reach out</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="footer__copyright">
+      &copy; by Apoorv Agrawal. <a href="#">Source Code</a>
+    </p>
+  </div>
+  <script src="./js/loggedin.js"></script>
+  <script src="./js/signup.js"></script>
+  </body>
+  </html>
+  
